@@ -1,0 +1,19 @@
+{
+  "name": "pache_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7lucckyy/Pache_Web.git"
+  },
+  "author": "Street_Coder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7lucckyy/Pache_Web/issues"
+  },
+  "homepage": "https://github.com/7lucckyy/Pache_Web#readme"
+}

@@ -5,17 +5,34 @@ body{
     font-display: 'lato', sans-serif;
     color: #505962;
 }
-
+.top-bar{
+    background-color: #ab4909;
+    height: 2.8rem;
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+.top-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    
+}
 .navbar{
     text-transform: uppercase;
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
     background: rgb(0, 0, 0, .6)!important;
 
 }
+.nav-item{
+    padding: .5rem;
+}
+
 .navbar-brand{
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
 }
@@ -23,9 +40,6 @@ body{
     height: 3.5rem;
     margin-right: .7rem;
 }
-/*.p1{
-    margin: auto;
-}*/
 
 .navbar-nav li{
     padding-right: .7rem;
@@ -42,23 +56,41 @@ body{
     color: #1ebba3;
 
 }
+#carouselExampleIndicators{
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+}
 
+.carousel-inner {
+    max-height: 48rem!important;
+}
 .carousel-item{
     height: 100vh;
-    background-size: 100% 100%;
+    background-size: cover;
     text-transform: uppercase;
 
 }
+.bg-custom {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
 
-/*img{
-    width: 90px;
-    height: 90px;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    
-}*/
+}
+.carousel-caption h4{
+    font-size: .9.5rem;
+    text-emphasis: .1rem .1rem .3rem rgba(0, 0, 0, .4);
+
+}
+.border-primary {
+    border-top: .2rem solid #ab4909;
+}
+
+.carousel-caption h5{
+    font-size: .9.1rem;
+    text-emphasis: .1rem .1rem .3rem rgba(0, 0, 0, .4);
+
+}
+
+
 .rounded-circle{
     width: 304;
     height: 236;
@@ -71,6 +103,52 @@ body{
     background-size: 100% 100%;
     
 }
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+
+}
+.btn {
+    text-align: center;
+    position: center;
+}
+
+.text-left,
+.text-right {
+    text-decoration-color: white;
+    font-size: .1.5rem solid;
+
+}
+
+@media (min-width: 576px) { 
+    .container-fluid {
+        min-height: 20rem;
+    }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .container-fluid {
+        min-height: 15rem;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .container-fluid {
+        min-height: 10rem;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
 .p 
 .h3{
     text-transform: uppercase;
@@ -99,9 +177,8 @@ i{
     padding: .1rem .1.2rem .1.7rem .1rem;
 }
 .lead{
-    font-display: 'lato', sans-serif;
-    font-weight: 200;
-    font-size:auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.rem;
 }
 
 /*Registration form style begins here*/
