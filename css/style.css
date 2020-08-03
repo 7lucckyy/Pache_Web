@@ -59,15 +59,21 @@ body{
 #carouselExampleIndicators{
     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
 }
+#carouselExampleIndicators2 {
+    height: 24.5rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+
+}
+
 
 .carousel-inner {
     max-height: 48rem!important;
 }
+
 .carousel-item{
     height: 100vh;
     background-size: cover;
     text-transform: uppercase;
-
 }
 .bg-custom {
     background-color: rgba(0, 0, 0, .4);
@@ -103,17 +109,57 @@ body{
     background-size: 100% 100%;
     
 }
+/*-- Fixed Background Image --*/
+.fixed {
+    background-image: url('../img/library.jpg');
+    position: fixed;
+    max-height: 20rem;
+}
+
+.fixed-background {
+    padding: 10rem 0rem;
+}
+
+.fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000!important;
+  }
+  .fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+  }
+  .fixed {
+    z-index: -999!important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+  }
 
 
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 1199px (xl) */
 @media (max-width: 1199.98px) {
-
+    
 }
 /* Devices under 768px (md) */
-@media (max-width: 767.98px) {
-
+@media (max-width: 404px) {
+    #mv1{
+        max-height: 15rem;
+    }
 }
 .btn {
     text-align: center;
@@ -123,139 +169,96 @@ body{
 .text-left,
 .text-right {
     text-decoration-color: white;
-    font-size: .1.5rem solid;
+    font-size: .1.3rem solid;
+    color:  white; 
+    font-family: "Poppins", sans-serif;
 
 }
-
-@media (min-width: 576px) { 
-    .container-fluid {
-        min-height: 20rem;
-    }
-
+.jumbotron py-5 mb-0 {
+    font-family: "Poppins", sans-serif;
+    font-size: .1.1rem solid;
+}
+.text-right {
+    text-align: justify;
+}
+.story{
+    max-height: 20rem;
+    max-width: 20rem;
+}
+.story1 {
+    max-height: 20rem;
+    max-width: 20rem;
+    height: 13.2rem;
+}
+.story2 {
+    max-height: 20rem;
+    max-width: 20rem;
+    height: 13.2rem;
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    .container-fluid {
-        min-height: 15rem;
+.bg1 {
+    max-height: 20rem;
+    max-width: 20rem;
+    height: 20.1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+.text-center{
+    color: black;
+    text-align: center;
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    .container-fluid {
-        min-height: 10rem;
+.text-center mt-3 col-sm-12 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 1.4rem;
+}
+.text-dark pt4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    text-transform: uppercase; 
+    text-align: center;
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-.p 
-.h3{
-    text-transform: uppercase;
-    padding-right: 1%;
-
+.my-4 text-dark {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.img-ii{
-
-    float: right;
-    padding-top: .1rem;
-    padding-left: .1.7rem;
-    padding-right: .1.7rem;
-    padding-bottom: .1rem;
-    height: 500px;
-    width: 40%;
-    
+ p {
+    font-size: 1.1rem; 
+    font-family: "Poppins", sans-serif;
+ }
+.about {
+    text-align: justify; 
+    font-size: 1.1rem;
+     text-align: justify;
+      font-family: "Poppins", sans-serif;
 }
-.container-fluidd{
-    padding: 2rem 1.2rem 2rem 1.2rem;
-}
-
-i{
-    height: 20%;
-    width: 10%;
-    padding: .1rem .1.2rem .1.7rem .1rem;
-}
-.lead{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.rem;
-}
-
-/*Registration form style begins here*/
-
-.main{
-	padding:20px;
-	font-family: 'Josefin Slab', serif;
-	border : 2px solid #50d8a4;
-	border-radius: 15px;
-	
-}
-.main h1{
-	font-size: 50px;
-	text-align:center;
-	font-family: 'Josefin Slab', serif;
-	color: #549978;
-}
-input{
-	font-family: 'Josefin Slab', serif;
-    width: 100%;
-	font-size: 30px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: none;
-    border-bottom: 2px solid #50d8a4;
-}
-input[type=submit] {
-	font-family: 'Josefin Slab', serif;
-	width: 100%;
-    background-color: #549978;
-    border: none;
+/*footer css style*/
+footer{
+    background-color: black!important;
+    height: 30.1rem;
     color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-	border-radius: 15px;
-}
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
 }
 
-input:hover {
-	font-family: 'Josefin Slab', serif;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-	border: none;
-    border-bottom: 2px solid #549978;
+#img0 {
+    height: 3.5rem;
+    margin-right: .7rem;
 }
-
-input[type=submit]:hover {
-	font-family: 'Josefin Slab', serif;
-	width: 100%;
-    background-color: #549978;
-    border: none;
+footer p, footer a
+.socket a {
     color: white;
-    padding: 16px 32px;
     text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-	border-radius: 15px;
+
 }
-.elementor-icon-box-icon {
-    font-size: 34px;
-    padding: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+.socket {
+    background-color: #383838;
 }
-.elementor-icon-box-icon col-sm-6[i]{
-    margin: auto;
-    padding: auto;
-    
+ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+}
+ul.social li {
+    margin: 0 auto;
+
 }
